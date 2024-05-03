@@ -14,6 +14,7 @@ import PageToRead from './components/NavBar/PageToRead/PageToRead.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
 import ReviewSubmissionForm from './components/ReviewSubmissionForm/ReviewSubmissionForm.jsx';
+import DiscussionForum from './components/DiscussionForum/DiscussionForum.jsx';
 
 
 const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path:'/review',
         element:<ReviewSubmissionForm></ReviewSubmissionForm>
+      },
+      {
+        path:'/discussion',
+        element:<DiscussionForum></DiscussionForum>
       }
     ]
   },
