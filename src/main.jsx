@@ -13,6 +13,7 @@ import ListedBooks from './components/ListedBoooks/ListedBooks.jsx';
 import PageToRead from './components/NavBar/PageToRead/PageToRead.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
+import ReviewSubmissionForm from './components/ReviewSubmissionForm/ReviewSubmissionForm.jsx';
 
 
 const router = createBrowserRouter([
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         path:"/booksCard/:id",
         element:<BookDetails></BookDetails>,
         loader:()=>fetch('/bookData.json')
+      },
+      {
+        path:'/review',
+        element:<ReviewSubmissionForm></ReviewSubmissionForm>
       }
     ]
   },
