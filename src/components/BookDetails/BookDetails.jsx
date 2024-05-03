@@ -2,8 +2,8 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveBookInfo } from '../../utility/localStorage';
-import { saveBookInfo2 } from '../../utility/local';
+import { getBookInfo, saveBookInfo } from '../../utility/localStorage';
+import { getBookInfo2, saveBookInfo2 } from '../../utility/local';
 
 export default function BookDetails() {
     const Booksdata = useLoaderData();
@@ -11,15 +11,34 @@ export default function BookDetails() {
     const idInt = parseInt(id);
     const data = Booksdata.find(book => book.bookId == idInt);
   
-    
+    const storedId=getBookInfo();
+    const storedWishListId=getBookInfo2()
     const notify = () => {
-        toast("Book Added to Read List");
+        if(storedId.includes(idInt)){
+            toast("You can't add!! because,Book already Added to Read List");
+        }
+        else {
+            toast("Book Added to Read List");
         saveBookInfo(idInt)
+        }
     };
     const wish = () => {
-        toast("Book Added to Wish List");
+
+        if(storedId.includes(idInt)){
+            toast("You Have already read");
+        }
+        else if(storedWishListId.includes(idInt)){
+
+            toast("You can not add!!You have Already added to wishlist")
+        }
+
+        else{
+            toast("Book Added to Wish List");
         saveBookInfo2(idInt)
+        }
     }
+    
+    console.log(storedId,idInt)
 
     return (
         <div className="hero min-h-screen bg-base-200">

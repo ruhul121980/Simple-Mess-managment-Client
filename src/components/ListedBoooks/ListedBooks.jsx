@@ -38,7 +38,7 @@ export default function ListedBooks() {
         setDisplayBooks(sortedBooks);
       }
     }
-  };
+  }
 
   useEffect(() => {
     const storedIds = getBookInfo();
