@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/QHnDL2Z/pngwing-1.png",
+      "review": "A powerful story of racial injustice and moral growth in a small Southern town.",
+      "totalPages": 281,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classic", "Social Justice"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 2,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/NsVcxkg/kindpng-7318921.png",
+      "review": "A dystopian novel depicting a totalitarian regime and the struggle for individual freedom.",
+      "totalPages": 328,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/7YRDkHq/kindpng-4022054-1.png",
+      "review": "A tragic love story set against the backdrop of the Jazz Age and the American Dream.",
+      "totalPages": 180,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/4fN8ngg/kindpng-81724-1.png",
+      "review": "A coming-of-age novel exploring themes of alienation, identity, and adolescence.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Existentialism"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Beauty",
+      "author": "J.K. Rowling",
+      "image": "https://i.ibb.co/8B6NDcD/kindpng-5624060-1.png",
+      "review": "The first installment in the magical saga of Harry Potter and his journey at Hogwarts School of Witchcraft and Wizardry.",
+      "totalPages": 320,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Magic", "Adventure"],
+      "publisher": "Bloomsbury",
+      "yearOfPublishing": 1997
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/5TRYqpY/kindpng-2592315-1.png",
+      "review": "An epic fantasy adventure following the journey of Bilbo Baggins and his companions to reclaim the Lonely Mountain from the dragon Smaug.",
+      "totalPages": 310,
+      "rating": 4.7,
+      "category": "Fantasy",
+      "tags": ["Adventure", "Quest"],
+      "publisher": "George Allen & Unwin",
+      "yearOfPublishing": 1937
+    }
+  ]
+  
