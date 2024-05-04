@@ -54,9 +54,10 @@ export default function ListedBooks() {
   }, []);
 
   return (
-    <div className='mt-5'>
-      <div className="dropdown dropdown-bottom ml-24">
-        <div tabIndex={0} role="button" className="btn m-1">Sort By</div>
+    <div className='mt-5 w-11/12 mx-auto'>
+      <div className='w-11/12 bg-slate-200 mx-auto text-center font-bold'>Books</div>
+      <div className="  dropdown dropdown-bottom items-center flex justify-center">
+        <div tabIndex={0} role="button" className="  btn m-1 bg-[#23BE0A]">Sort By</div>
         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
           <button onClick={() => handleFilter('read', 'all')}><li><a>All</a></li></button>
           <button onClick={() => handleFilter('read', 'rating')}><li ><a>Rating</a></li></button>

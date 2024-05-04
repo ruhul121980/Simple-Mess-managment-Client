@@ -15,12 +15,14 @@ import BookDetails from './components/BookDetails/BookDetails.jsx';
 import Wishlist from './components/Wishlist/Wishlist.jsx';
 import ReviewSubmissionForm from './components/ReviewSubmissionForm/ReviewSubmissionForm.jsx';
 import DiscussionForum from './components/DiscussionForum/DiscussionForum.jsx';
+import Error404 from './components/Error404.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<Error404></Error404>,
     children:[
       {
         path:'/',

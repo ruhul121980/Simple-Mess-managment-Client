@@ -13,7 +13,7 @@ export default function Books() {
 
   return (
     <div>
-      <h2>Books {books.length}</h2>
+    <h2 className='text-center text-3xl font-bold mt-5 mb-5'>Books</h2>
 
       <div className='grid grid-cols-3 gap-4 w-11/12 mx-auto'>
         {
