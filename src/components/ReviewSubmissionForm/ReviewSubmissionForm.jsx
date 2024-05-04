@@ -27,7 +27,7 @@ const ReviewSubmissionForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto">
+    <div className="w-11/12 mx-auto">
       <h2 className="text-2xl font-semibold mb-4">Submit a Review</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
