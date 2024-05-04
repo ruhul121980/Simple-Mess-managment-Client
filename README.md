@@ -5,6 +5,6 @@ Live Link :
 Features:
 * Responsive
 * Attractive Landing Page
-* User can See Book List
-* User can Add books to wishlist
-* User can Add books to read list
+* User can see Book List
+* User can add books to wishlist
+* User can add books to read list
