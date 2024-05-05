@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "../../Chart/Chart";
+import Chart from "../Chart/Chart";
 import { useLoaderData } from "react-router-dom";
 
 const PageToRead = () => {

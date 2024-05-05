@@ -10,19 +10,17 @@ import {
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import ListedBooks from './components/ListedBoooks/ListedBooks.jsx';
-import PageToRead from './components/NavBar/PageToRead/PageToRead.jsx';
+import PageToRead from './components/PageToRead/PageToRead.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
-import Wishlist from './components/Wishlist/Wishlist.jsx';
 import ReviewSubmissionForm from './components/ReviewSubmissionForm/ReviewSubmissionForm.jsx';
 import DiscussionForum from './components/DiscussionForum/DiscussionForum.jsx';
-import Error404 from './components/Error404.jsx';
+
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<Error404></Error404>,
     children:[
       {
         path:'/',
@@ -31,25 +29,21 @@ const router = createBrowserRouter([
       {
         path:'/listedBooks',
         element:<ListedBooks></ListedBooks>,
-        loader:()=>fetch("/bookData.json"),
+        loader:()=>fetch("data.json"),
         
       },
       {
         path:"/pageToRead",
         element:<PageToRead></PageToRead>,
-        loader:()=>fetch('/bookData.json')
+        loader:()=>fetch('data.json')
       },
-      
-        {
-          path:'/wishlist',
-           element:<Wishlist></Wishlist>
-        },
+    
       
       
       {
         path:"/booksCard/:id",
         element:<BookDetails></BookDetails>,
-        loader:()=>fetch('/bookData.json')
+        loader:()=>fetch('data.json')
       },
       {
         path:'/review',

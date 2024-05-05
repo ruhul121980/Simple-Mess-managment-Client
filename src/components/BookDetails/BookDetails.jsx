@@ -62,7 +62,7 @@ export default function BookDetails() {
                     <div className="flex gap-4">
                         <div>
                             <button onClick={notify} className="btn btn-outline mr-4">Read</button>
-                            <ToastContainer />
+                            
                         </div>
                         <div>
                             <button onClick={wish} className="btn btn-info">Wishlist</button>

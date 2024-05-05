@@ -29,10 +29,10 @@ const DiscussionForum = () => {
           </div>
         </div>
 
-        {/* Add more threads here */}
+      
       </div>
 
-      {/* New Thread Button */}
+      
       <div className="mt-8">
         <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded">
           Create New Thread
