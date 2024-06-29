@@ -1,8 +1,14 @@
 import React from 'react';
+import NavBar from '../NavBar/NavBar';
 
 const DiscussionForum = () => {
+  
   return (
+    <div><NavBar></NavBar>
+    
+   
     <div className="container mx-auto px-4 py-8">
+      
       <h1 className="text-3xl font-bold mb-4">Discussion Forum</h1>
       <div className="space-y-6">
         <div className="bg-white rounded-lg shadow-md p-6">
@@ -38,6 +44,7 @@ const DiscussionForum = () => {
           Create New Thread
         </button>
       </div>
+    </div>
     </div>
   );
 };

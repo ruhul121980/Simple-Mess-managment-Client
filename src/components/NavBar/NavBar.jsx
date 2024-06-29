@@ -4,11 +4,9 @@ import { NavLink } from 'react-router-dom'
 export default function NavBar() {
 
     const links=<>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
-        <li><NavLink to="/pageToRead">Pages to Read</NavLink></li>
-        <li><NavLink to="/review">Book Review</NavLink></li>
-        <li><NavLink to="/discussion">Discussion Forum</NavLink></li>
+        <li><NavLink to="/home">Home</NavLink></li>
+        
+        <li><NavLink to="/discussion">Room</NavLink></li>
         
     
     </>
