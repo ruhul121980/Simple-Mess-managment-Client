@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function NavBar() {
 
     const links=<>
         <li><NavLink to="/home">Home</NavLink></li>
         
-        <li><NavLink to="/discussion">Room</NavLink></li>
+        <li><NavLink to="/room">Room</NavLink></li>
         
     
     </>
@@ -22,7 +22,7 @@ export default function NavBar() {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Book Vibe</a>
+    <a className="btn btn-ghost text-xl">MMS</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -30,8 +30,8 @@ export default function NavBar() {
     </ul>
   </div>
   <div className="navbar-end">
-  <a className="btn bg-[#23BE0A]">Sign In</a>
-    <a className="btn bg-[#59C6D2]">Sign Up</a>
+  
+  <Link to="/"> <a className="btn bg-[#59C6D2]">Logout</a></Link>
   </div>
 </div>
   )

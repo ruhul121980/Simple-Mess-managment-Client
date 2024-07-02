@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 
 const RoomDetailsForm = () => {
     const [formData, setFormData] = useState({
         roomNumber: '',
         roomName: '',
     });
+    const [submitted, setSubmitted] = useState(false); // State to track form submission
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -17,8 +19,8 @@ const RoomDetailsForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        axios.post('http://localhost:5000/api/rooms', formData)
+
+        axios.post('https://mess-managment-kappa.vercel.app/api/rooms', formData)
             .then(response => {
                 console.log(response.data);
                 // Clear the form
@@ -26,11 +28,17 @@ const RoomDetailsForm = () => {
                     roomNumber: '',
                     roomName: '',
                 });
+                setSubmitted(true); // Set submitted to true after successful form submission
             })
             .catch(error => {
                 console.error('There was an error submitting the form!', error);
             });
     };
+
+    // Redirect to home page after successful form submission
+    if (submitted) {
+        return <Navigate to="/home" />;
+    }
 
     return (
         <div className="bg-gray-100 flex items-center justify-center min-h-screen">
